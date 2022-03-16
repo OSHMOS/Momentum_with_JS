@@ -1,8 +1,10 @@
-const amIFat = true;
-const amINull = null; // values
-// null is nothing literally
-const amIUndefiend = undefined; //types
-// variable exists but is not defined
-let something;
-console.log(amIFat);
-console.log(something, amINull);
+const daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// not string, it's array
+
+// Get Item from Array
+console.log(daysOfWeek);
+
+// Add one more day to the Array
+daysOfWeek.push('sun');
+
+console.log(daysOfWeek);
