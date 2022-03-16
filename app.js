@@ -1,10 +1,21 @@
-const daysOfWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-// not string, it's array
+// Objects
+const player = {
+  name: 'osh',
+  points: 10,
+  fat: true,
+};
+console.log(player);
 
-// Get Item from Array
-console.log(daysOfWeek);
+// Get property in Objects
+console.log(player.name);
+console.log(player['name']);
+// Player is constant but property is not constant
+player.fat = false;
+console.log(player);
 
-// Add one more day to the Array
-daysOfWeek.push('sun');
+// Add property in Objects
+player.lastName = 'mos';
+console.log(player);
 
-console.log(daysOfWeek);
+player.points += 15;
+console.log(player.points);
