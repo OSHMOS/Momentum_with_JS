@@ -1,13 +1,8 @@
-const a = 5; // basic variable
-const b = 2;
-let myName = 'osh'; // let is possible to update
-let veryLongVariableName = 0;
-
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log('Hello ' + myName);
-
-myName = 'oshmos'; // update
-
-console.log('your new name is ' + myName);
+const amIFat = true;
+const amINull = null; // values
+// null is nothing literally
+const amIUndefiend = undefined; //types
+// variable exists but is not defined
+let something;
+console.log(amIFat);
+console.log(something, amINull);
