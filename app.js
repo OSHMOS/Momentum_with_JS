@@ -1,28 +1,23 @@
-// function
-function sayHello(nameOfPerson, age) {
-  console.log("Hello my name is " + nameOfPerson + ". I'm " + age + " years old");
-}
-
-sayHello("oshmos", 26);
-sayHello("jsjsjsjsjs1019", 24);
-
-function plus(a, b) {
-  console.log(a + b);
-}
-
-function devide(a, b) {
-  console.log(a / b);
-}
-
-plus(8, 60); // ordered >>
-devide(98, 20);
-
-const player = {
-  name: "osh",
-  sayHello: function (otherPersonName) {
-    console.log(`Hello my name is ${otherPersonName}.`);
+const calculator = {
+  add: function(a, b) {
+    console.log(a + b);
+  },
+  minus: function(a, b) {
+    console.log(a - b);
+  },
+  times: function(a, b) {
+    console.log(a * b);
+  },
+  divide: function(a, b) {
+    console.log(a / b);
+  },
+  powerOf: function(a, b) {
+    console.log(a ** b);
   }
 };
 
-console.log(player.name);
-player.sayHello("oshmos");
+calculator.add(1, 2);
+calculator.minus(1, 2);
+calculator.times(1, 2);
+calculator.divide(1, 2);
+calculator.powerOf(1, 2);
