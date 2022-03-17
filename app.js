@@ -1,23 +1,33 @@
+const age = 26;
+
+function calculateFrAge(ageOfKorean) {
+  return ageOfKorean - 2; 
+}
+
+const FrAge = calculateFrAge(age);
+
+console.log(FrAge);
+
 const calculator = {
-  add: function(a, b) {
-    console.log(a + b);
+  plus: function(a, b) {
+    return a + b;
   },
   minus: function(a, b) {
-    console.log(a - b);
+    return a - b;
   },
   times: function(a, b) {
-    console.log(a * b);
+    return a * b;
   },
   divide: function(a, b) {
-    console.log(a / b);
+    return a / b;
   },
-  powerOf: function(a, b) {
-    console.log(a ** b);
-  }
+  power: function(a, b) {
+    return a ** b;
+  },
 };
 
-calculator.add(1, 2);
-calculator.minus(1, 2);
-calculator.times(1, 2);
-calculator.divide(1, 2);
-calculator.powerOf(1, 2);
+const plusResult = calculator.plus(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const timesResult = calculator.times(10, minusResult);
+const divideResult = calculator.divide(timesResult, plusResult);
+const powerResult = calculator.power(divideResult, minusResult);
