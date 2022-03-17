@@ -1,33 +1,5 @@
-const age = 26;
+// Conditionals
+const age = parseInt(prompt("How old are you?"));
 
-function calculateFrAge(ageOfKorean) {
-  return ageOfKorean - 2; 
-}
-
-const FrAge = calculateFrAge(age);
-
-console.log(FrAge);
-
-const calculator = {
-  plus: function(a, b) {
-    return a + b;
-  },
-  minus: function(a, b) {
-    return a - b;
-  },
-  times: function(a, b) {
-    return a * b;
-  },
-  divide: function(a, b) {
-    return a / b;
-  },
-  power: function(a, b) {
-    return a ** b;
-  },
-};
-
-const plusResult = calculator.plus(2, 3);
-const minusResult = calculator.minus(plusResult, 10);
-const timesResult = calculator.times(10, minusResult);
-const divideResult = calculator.divide(timesResult, plusResult);
-const powerResult = calculator.power(divideResult, minusResult);
+console.log(age);
+console.log(typeof(age)); // to look type of variable
