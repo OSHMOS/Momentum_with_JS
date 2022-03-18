@@ -1,6 +1,5 @@
-// HTML is glue
-// HTML gets JS
-// JS gets HTML too
-// example
-console.dir(document);
-document.title;
+const title = document.getElementById("title");
+title.innerText = "Got You!";
+
+console.log(title.id);
+console.log(title.className);
