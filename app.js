@@ -1,10 +1,6 @@
-const hellos = document.getElementsByClassName("hello");
-console.log(hellos);
-hellos.innerText = "hello"; // many elements are not changed
+const title = document.querySelector(".hello h1");
 
-const h1 = document.getElementsByTagName("h1");
-console.log(h1);
-
-const qs = document.querySelector(".hi h1"); // 99.98%
-console.log(qs);
-qs.innerText = "Hi!"; // change is in only one elements
+function handleTitleClick() {
+  console.log("title was clicked!");
+}
+title.addEventListener("click", handleTitleClick);
